@@ -1,4 +1,4 @@
-# 💤 Alertic - Drowsiness Detection System
+# 💤 Alertix - Drowsiness Detection System
 
 The **ALERTIC** is an AI-powered safety solution designed to monitor and detect signs of driver fatigue or drowsiness using computer vision and deep learning techniques. Built with OpenCV, TensorFlow, and Keras, this project classifies facial features into alert, drowsy, or sleepy states based on real-time video analysis.
 
