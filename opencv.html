@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary meta tags, CSS, and JavaScript for the OpenCV model -->
+    <title>OpenCV Model</title>
+</head>
+<body>
+    <!-- HTML content for displaying the OpenCV model -->
+    <h1>OpenCV Model</h1>
+    <img id="opencv-img" src="{{ url_for('video_feed') }}" width="640" height="480">
+    <button id="opencv-btn" class="btn btn-primary">Switch to OpenCV Model</button>
+    
+    <!-- Include necessary JavaScript code for switching models -->
+    <script>
+        // JavaScript code for switching to OpenPose model
+        $("#opencv-btn").click(function () {
+            window.location.href = "/openpose";
+        });
+    </script>
+</body>
+</html>
