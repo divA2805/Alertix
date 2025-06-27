@@ -50,10 +50,14 @@ The **Alertix** is an AI-powered safety solution designed to monitor and detect 
 2. **Install Dependencies**
    ```bash 
    pip install -r requirements.txt
-3. **Run the Model on Test Images**
-   ```bash
-   python test_model.py --img_path "path/to/image.jpg"
-4. **Run Real-time Detection**
+
+3. **Download the following files:**
+# - shape_predictor_68_face_landmarks.dat: https://github.com/davisking/dlib-models
+# - graph_opt.pb (OpenPose): from official OpenPose model zoo or precompiled TensorFlow models
+
+4. Place the downloaded files in the /models folder.
+
+5. **Run Real-time Detection**
    ```bash 
    python app.py
 
