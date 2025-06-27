@@ -5,11 +5,11 @@ from imutils import face_utils
 from pygame import mixer
 
 mixer.init()
-mixer.music.load(r"C:\Users\Ashutosh Sharma\Final\alarm.wav")
+mixer.music.load("models/alarm.wav")
 
 cap = cv2.VideoCapture(0)
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(r"C:\Users\Ashutosh Sharma\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
 
 sleep = 0
 drowsy = 0
