@@ -20,7 +20,7 @@ POSE_PAIRS = [ ["Neck", "RShoulder"], ["Neck", "LShoulder"], ["RShoulder", "RElb
 inWidth = width
 inHeight = height
 
-net = cv.dnn.readNetFromTensorflow(r"C:\Users\Ashutosh Sharma\graph_opt.pb")
+net = cv.dnn.readNetFromTensorflow("models/graph_opt.pb")
 
 cap = cv.VideoCapture(0)  # Open the default camera (usually the webcam)
 
