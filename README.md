@@ -45,8 +45,8 @@ The **Alertix** is an AI-powered safety solution designed to monitor and detect 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/drowsiness-detection.git
-   cd drowsiness-detection
+   git clone (https://github.com/divA2805/Alertix)
+   cd Alerix
 2. **Install Dependencies**
    ```bash 
    pip install -r requirements.txt
@@ -55,7 +55,7 @@ The **Alertix** is an AI-powered safety solution designed to monitor and detect 
    python test_model.py --img_path "path/to/image.jpg"
 4. **Run Real-time Detection**
    ```bash 
-   python detect_drowsiness_live.py
+   python app.py
 
 ## 💡 Make sure your webcam is accessible and YOLOv8/Keras model weights are in the correct folder.
 
