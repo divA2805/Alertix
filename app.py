@@ -8,12 +8,11 @@ from pygame import mixer
 app = Flask(__name__)
 
 mixer.init()
-mixer.music.load(r"C:\Users\Ashutosh Sharma\Final\alarm.wav")
+mixer.music.load("models/alarm.wav")
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor(
-    r"C:\Users\Ashutosh Sharma\shape_predictor_68_face_landmarks.dat"
-)
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
+
 
 def detect_faces():
     sleep = 0
@@ -129,7 +128,8 @@ def detect_faces():
     cap.release()
 
 def detect_poses_openpose():
-    net = cv2.dnn.readNetFromTensorflow(r"C:\Users\Ashutosh Sharma\graph_opt.pb")
+    net = cv2.dnn.readNetFromTensorflow("models/graph_opt.pb")
+
     threshold = 0.2
     width = 368
     height = 368
@@ -205,6 +205,7 @@ def index():
 @app.route("/opencvDlib2")
 def opencv():
     return render_template("opencvDlib.html")
+
 
 @app.route("/openpose")
 def openpose():
