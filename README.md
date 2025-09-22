@@ -104,11 +104,6 @@ Multimodal sensor integration (e.g., yawning detection, pulse)
 
 ---
 
-## 🙌 Acknowledgments
-This project was created as part of the 5th semester Practical Training for the B.Tech (CSE-AI&ML) program at Dronacharya College of Engineering, Farukhnagar, Haryana.
-
----
-
 ## 🔗 References
 OpenCV Documentation
 
